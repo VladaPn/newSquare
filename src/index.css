@@ -102,6 +102,13 @@ body.dark-mode .view-more{
 a.more{
   margin-left: 15px;
 }
+.navbar{
+    overflow-x: hidden;
+
+}
+div{
+    overflow-x: hidden;
+}
 /*media queeriji*/
 @media(max-width:768px){
   .separator{
