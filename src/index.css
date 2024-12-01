@@ -9,7 +9,7 @@
   color: var(--main-text-color);
   background-color: #ffffff;
   --main-text-color:#0f1a52;
-  --secondary-text-color:rgb(190, 8, 63);
+  --secondary-text-color:#be083f;
   --secondary-link-color:rgb(217, 0, 246);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,7 +61,7 @@ a:hover{
   color: var(--secondary-text-color);
   transform: translate(10px);
 }
-a:not(.logo-a):hover{
+a:not(.logo-a,.live-a):hover{
   color: var(--secondary-link-color);
 }
 body.dark-mode{
@@ -77,8 +77,29 @@ body.dark-mode a.logo-a:hover{
   color:var(--secondary-text-color) !important;
 }
 
+/*separatori*/
+.separator{
+  display: flex;
+  align-items: center;
+  gap:20px
+}
+.separator h4{
+  font-size: 1.5rem;
+}
+.line{
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(105deg, #be083f 0%, #0f1a52);
+}
 
 /*media queeriji*/
+@media(max-width:768px){
+  .separator{
+    display: block;
+    align-items: center;
+    gap:20px
+  }
+}
 @media(max-width:390px){
   .logo-a{
     font-size: 1.6rem;

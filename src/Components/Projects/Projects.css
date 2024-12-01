@@ -1,0 +1,71 @@
+.projects .inner-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    column-gap: 30px;
+    padding-bottom: 100px;
+}
+.card{
+    border: 1px solid #484f5d;
+}
+.card img{
+    width: 100%;
+}
+.inner-text{
+    padding: 10px;
+}
+.inner-text .tech{
+    font-weight: 300;
+}
+.inner-text h5{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.inner-text p:not(.tech){
+    margin-bottom: 15px;
+}
+.live-a {
+    position: relative;
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+body::not(.dark-mode) .live-a:hover{
+    color: var(--secondary-text-color);
+}
+.live-a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Razmak ispod teksta */
+    width: 0;
+    height: 3px; /* Debljina linije */
+    background-color: var(--secondary-text-color);
+    transition: width 0.4s ease-in-out;
+}
+
+.live-a:hover::after {
+    width: 100%; /* Proširi liniju ispod */
+}
+
+body.dark-mode .live-a {
+    color: yellow;
+}
+body.dark-mode .live-a:hover{
+    color: yellow;
+}
+body.dark-mode .live-a::after {
+    background-color: yellow;
+}
+
+@media(max-width:872px){
+    .projects .inner-container{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        row-gap: 50px;
+        padding-bottom: 100px;
+    }
+}
