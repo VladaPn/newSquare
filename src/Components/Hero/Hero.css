@@ -1,0 +1,30 @@
+.hero-section{
+    padding-block: 50px;
+}
+.hero-section .container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero-section h3 {
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 1024px) {
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+}

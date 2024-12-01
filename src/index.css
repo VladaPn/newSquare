@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+:root {
+  font-family: "Fira Code", monospace;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: var(--main-text-color);
+  background-color: #ffffff;
+  --main-text-color:#0f1a52;
+  --secondary-text-color:rgb(190, 8, 63);
+  --secondary-link-color:rgb(217, 0, 246);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100% !important;
+  min-height: 100vh;
+}
+img{
+  max-width: 100%;
+}
+.logo-a{
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.enh{
+  color: var(--secondary-text-color);
+}
+
+/*stilovi linkova*/
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  padding: 3px;
+}
+a.logo-a{
+  font-weight: 600;
+  transition: 0.3s all linear;
+}
+a:not(.logo-a){
+  transition: 0.2s all linear;
+}
+
+a:hover{
+  color: var(--secondary-text-color);
+  transform: translate(10px);
+}
+a:not(.logo-a):hover{
+  color: var(--secondary-link-color);
+}
+body.dark-mode{
+  color: white;
+}
+body.dark-mode .hashtag{
+  color: yellow;
+}
+body.dark-mode a:hover{
+  color: yellow !important;
+}
+body.dark-mode a.logo-a:hover{
+  color:var(--secondary-text-color) !important;
+}
+
+
+/*media queeriji*/
+@media(max-width:390px){
+  .logo-a{
+    font-size: 1.6rem;
+  }
+}
+@media(max-width:350px){
+  .logo-a{
+    font-size: 1.4rem;
+  }
+}
+@media(max-width:325px){
+  .logo-a{
+    font-size: 1.2rem;
+  }
+}
