@@ -91,7 +91,17 @@ body.dark-mode a.logo-a:hover{
   width: 100%;
   background: linear-gradient(105deg, #be083f 0%, #0f1a52);
 }
-
+.view-more{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  transition: 0.4s all linear;}
+body.dark-mode .view-more{
+  color: white;
+}
+a.more{
+  margin-left: 15px;
+}
 /*media queeriji*/
 @media(max-width:768px){
   .separator{

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Importujemo Link za navigaciju
 import './Navbar.css';
-import moon from '../../assets/moon.svg'
+import moon from '../../assets/moon1.png'
+import sun from '../../assets/sun1.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,8 @@ const Navbar = () => {
           </ul>
         </nav>
         <button className="theme-toggle" onClick={toggleTheme}>
-          {darkMode ? '🌞' : '🌙'}
+          <img className='toggler' src={darkMode ? sun : moon} alt="" />
+       
         </button>
       </div>
     </div>

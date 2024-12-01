@@ -17,7 +17,9 @@
 .main-menu {
     display: flex;
 }
-
+.toggler{
+  width: 40px;
+}
 .main-menu-list {
     list-style-type: none;
     display: flex;
@@ -25,7 +27,9 @@
     align-items: center;
     gap: 30px;
 }
-
+.main-menu-list a{
+  letter-spacing: 1px;
+}
 /*za toggle padajuceg menija*/
 .theme-toggle {
     background: none;
