@@ -110,7 +110,7 @@ div{
     overflow-x: hidden;
 }
 /*media queeriji*/
-@media(max-width:768px){
+@media(max-width:1163px){
   .separator{
     display: block;
     align-items: center;

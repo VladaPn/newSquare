@@ -76,7 +76,17 @@ body.dark-mode .live-a:hover{
 body.dark-mode .live-a::after {
     background-color: yellow;
 }
-
+.card {
+    opacity: 0; /* Kartice su nevidljive pre animacije */
+    transform: translateY(20px); /* Pomera ih nadole */
+    transition: all 0.5s ease-out; /* Glatka tranzicija */
+  }
+  
+  .card.animate {
+    opacity: 1; /* Kartice postaju vidljive */
+    transform: translateY(0); /* Vraća ih u originalni položaj */
+  }
+  
 @media(max-width:872px){
     .projects .inner-container{
         margin-top: 80px;
