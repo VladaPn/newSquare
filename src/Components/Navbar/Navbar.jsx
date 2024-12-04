@@ -1,20 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Importujemo Link za navigaciju
 import './Navbar.css';
-import moon from '../../assets/moon1.png'
-import sun from '../../assets/sun1.png'
+import moon from '../../assets/moon1.png';
+import sun from '../../assets/sun1.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+
+  // Učitavanje stanja teme iz localStorage-a pri pokretanju aplikacije
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode', !darkMode);
+    const newTheme = !darkMode;
+    setDarkMode(newTheme);
+    document.body.classList.toggle('dark-mode', newTheme);
+    
+    // Sačuvaj novo stanje teme u localStorage
+    localStorage.setItem('theme', newTheme ? 'dark' : 'light');
   };
 
   return (
@@ -32,8 +45,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <button className="theme-toggle" onClick={toggleTheme}>
-          <img className='toggler' src={darkMode ? sun : moon} alt="" />
-       
+          <img className='toggler' src={darkMode ? sun : moon} alt="Theme toggle icon" />
         </button>
       </div>
     </div>
@@ -41,4 +53,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

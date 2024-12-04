@@ -1,0 +1,29 @@
+.about-section .img-div{
+    display: flex;
+    justify-content: center;
+}
+.img-div img{
+    margin-top: 20px;
+    width: 40%;
+    min-width: min(90%, 500px);
+    margin-bottom: 70px;
+}
+.about-section .inner-container{
+    padding-block: 70px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.strong-heading{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-weight: 700;
+}
+
+@media(max-width:420px){
+    .about-text:nth-of-type(2){
+        margin-top: 20px;
+    }
+}
