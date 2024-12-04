@@ -8,20 +8,20 @@ const Footer = () => {
         <div className="container">
       <div className="footer-content">
         
-        <a className="footer-logo" href=""><img src={logo} alt="" /></a>
+        <a className="footer-logo" href="#home-top"><img src={logo} alt="" /></a>
         <div className="footer-heading">
         <p className="footer-tagline">
           Crafting modern, responsive, and user-friendly web experiences.
         </p>
         </div>
         <div className="social-icons">
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/VladaPn" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vladimir-jovanovi%C4%87-234821285/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/web.vladimir.dev/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
         </div>

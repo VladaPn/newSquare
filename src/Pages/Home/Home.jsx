@@ -6,7 +6,7 @@ import About from '../../Components/About/About'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home ' id='home-top'>
       <Hero/>
       <Projects/>
       <Skills/>

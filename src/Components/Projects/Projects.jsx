@@ -112,7 +112,7 @@ const Projects = () => {
               </p>
               <div className="links-div">
                 <a
-                  href="https://vercel.com/vladapns-projects/virtual-r"
+                  href="https://virtual-1purtivna-vladapns-projects.vercel.app/"
                   target="_blank"
                   className="live-a"
                 >

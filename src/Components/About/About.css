@@ -9,10 +9,11 @@
     margin-bottom: 70px;
 }
 .about-section .inner-container{
-    padding-block: 70px;
+    padding-block: 90px;
     text-align: justify;
     font-weight: 500;
     font-size: 1.2rem;
+    padding-bottom: 120px;
 }
 .strong-heading{
     font-size: 2rem;
